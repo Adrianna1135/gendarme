@@ -1,0 +1,96 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.table-employes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-employes th, 
+.table-employes td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.table-employes th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+}
+
+.table-employes tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-employes tr:hover {
+  background-color: #eaf3fb;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Bouton modifier */
+button:first-of-type {
+  background: #3498db;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background: #2980b9;
+}
+
+/* Bouton supprimer */
+button:last-of-type {
+  background: #e74c3c;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background: #c0392b;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    max-width: 100%;
+  }
+
+  .table-employes {
+    width: 100%;
+    background-color: goldenrod;
+  }
+}

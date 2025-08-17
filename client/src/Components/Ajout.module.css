@@ -1,0 +1,55 @@
+.App {
+  padding: 24px 0;
+}
+
+h1 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 12px;
+  color: #333;
+}
+
+input, select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s;
+  width: 300px;
+}
+
+input:focus, select:focus {
+  border: 1px solid #3498db;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  width: 300px;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #2980b9;
+}
